@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Swim4U | set your goal & swim it</title>
 		<meta property="og:title" content="Swim 4U | set your goal & swim it"/>
-		<meta property="og:description" content="Ми спортсмени - аматори, подорожуємо по світу, долаючи кілометри біжучи, пливучи та крутячи педалі. "/>
+		<meta property="og:description" content="Ми спортсмени-аматори, подорожуємо по світу, долаючи кілометри біжучи, пливучи та крутячи педалі. "/>
 		<meta property="og:image" content="https://shuandr.github.io/Swim4U/og-image-swim.jpg">
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content= "https://shuandr.github.io/Swim4U/" />
@@ -117,7 +117,7 @@
 		                                    <li class="swim-1 include-list" ng-repeat="x in prog.include">{[{ x }]}</li>
 		                                </ol>
 		                                <h5 class="text-center swim-2 uppercase s-bold">Тренування:</h5>
-		                                <p class="big swim-2">Аквапарк «ПЛЯЖ», <span class="s-bold">7:00</span> або <span class="s-bold">8:00</span> ранку <br><span class="s-bold"> ПН | СР | ПТ</span> або <span class="s-bold">ВТ | ЧТ | СБ</span> на вибір</p><br>
+		                                <p class="big swim-2">Аквапарк «ПЛЯЖ», <span class="s-bold">7:00 | 8:00 | 9:00</span>  ранку <br><span class="s-bold"> ПН | СР | ПТ</span> або <span class="s-bold">ВТ | ЧТ | СБ</span> на вибір</p><br>
 		                                <ul>
 		                                    <li class="swim-1 include-list" ng-repeat="x in prog.descr">{[{ x }]}</li>
 		                                </ul>
@@ -155,26 +155,22 @@
 		    <div class="grid-container">
 		        <div id="feedback-4u">
 		            <h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
-		            <div class="grid-x  grid-padding-x small-up-1 large-up-2" data-equalizer data-equalize-on="large" data-equalize-by-row="true">
+		            <!-- <div class="grid-x  grid-padding-x small-up-1 large-up-2" data-equalizer data-equalize-on="large" data-equalize-by-row="true"> -->
+		            <div class="grid-x  grid-padding-x small-up-1 large-up-2">
 		                <div class="cell" ng-repeat="quote in feedbacks">
-		                    <div class="card white-bg" data-equalizer-watch>
+		                    <!-- <div class="card white-bg" data-equalizer-watch> -->
+		                    <div class="card white-bg">
 		                        <div class="grid-x">
 		                            <div class="cell medium-shrink text-center">
 		                                <img src="assets/img/{[{quote.ID}]}.jpg">
 		                            </div>
 		                            <div class="cell medium-auto">
 		                                <div class="card-section ">
-		                                    <div class="grid-y" style="height: 86%; overflow: hidden;">
-		                                        <div class="cell">
-		                                            <h6 class="swim-1 bold uppercase">{[{quote.name}]} <br>
-		                                                <span class="occupy swim-2">{[{quote.occupy}]}</span></h6>
-		                                            <p>{[{quote.text}]}</p>
-		                                        </div>
+		                                    <div class="read-more" style="overflow: hidden;">
+		                                    <h6 class="swim-1 bold uppercase">{[{quote.name}]} <br>
+		                                        <span class="occupy swim-2">{[{quote.occupy}]}</span></h6>
+		                                        <p>{[{quote.text}]}</p>
 		                                    </div>
-		                                    <div class="cell  aling-self-bottom">
-		                                        <a href="">
-		                                            <div class="cell swim-1 s-bold">читати далі...</div>
-		                                        </a> </div>
 		                                </div>
 		                            </div>
 		                        </div>
@@ -182,6 +178,7 @@
 		                </div>
 		            </div>
 		        </div>
+		    </div>
 		    </div><br><br>    <div class="white-bg slogan" style="margin-bottom: 0">
 		        <h2 class="text-center swim-1 uppercase ">set your goal & <span class="swim-2 bold">swim</span> it</h2>
 		    </div>
@@ -234,5 +231,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
 		<script src="assets/js_plugins/myAngular.js"></script>
 		<script src="assets/js_plugins/owl.carousel.min.js"></script>
+		<script src="assets/js_plugins/readmore.min.js"></script>
 	</body>
 </html>
