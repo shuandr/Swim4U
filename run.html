@@ -4,16 +4,15 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Swim4U | SET YOUR GOAL & ...</title>
-		<meta property="og:title" content="Sport 4U | set your goal & run swim ride it"/>
+		<title>Swim4U | set your goal & swim it</title>
+		<meta property="og:title" content="Swim 4U | set your goal & swim it"/>
 		<meta property="og:description" content="Ми спортсмени - аматори, подорожуємо по світу, долаючи кілометри біжучи, пливучи та крутячи педалі. "/>
-		<meta property="og:image" content="https://shuandr.github.io/Sport4U/og-image_temp.png">
+		<meta property="og:image" content="https://shuandr.github.io/Swim4U/og-image-swim.jpg">
 		<meta property="og:type" content="website"/>
-		<meta property="og:url" content= "https://shuandr.github.io/Sport4U/" />
+		<meta property="og:url" content= "https://shuandr.github.io/Swim4U/" />
 		
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/app.css">
-		<!-- <link rel="stylesheet" href="assets/css/fullpage.min.css"> -->
 		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	</head>
@@ -79,61 +78,64 @@
 		            <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/run/08.jpg">
 		            <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/run/09.jpg">
 		            <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/run/10.jpg">
-		            <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/run/11.jpg">
-		            <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/run/12.jpg">
+		            
 		        </div><br><br>
 		    </div>
-		    <div class=""><br>
-		        <h1 class="text-center white uppercase">наші <span class="bold">програми</span></h1><br>
-		        <div class="grid-x  grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
-		            <div class="cell " ng-repeat="prog in programs.run" data-equalizer-watch>
-		                <div class="grid-y " style="height: 100%">
-		                    <div class="cell  dark-024-bgrd">
-		                        <h1 class="text-center white bold uppercase">{[{prog.name}]}</h1>
-		                        <img class="" src="assets/img/programs/{[{prog.ID}]}.png" alt="">
-		                        <!--  <div class="prog-name">
-		                        </div> -->
-		                    </div>
-		                    <div class="cell prog-features dark-024-bgrd">
-		                        <h5 class="text-center"><span class="s-bold uppercase">мета: </span>{[{prog.goal}]}</h5>
-		                        <div class=" text-center">початок: <span class=" s-bold"> {[{prog.start}]}</span> |
-		                            заплив: <span class=" s-bold"> {[{prog.final}]}</span>
-		                        </div>
-		                        <div class="grid-x">
-		                            <div class="cell small-6 "><span class=" s-bold bigger">{[{prog.duration}]}</span>
-		                            </div>
-		                            <div class="cell small-6 text-right"><span class="s-bold bigger">{[{prog.price}]}</span> грн
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div class="cell  white-bg"><br>
-		                        <h4 class="text-center run-1 ">детальніше <i class="fa fa-arrow-circle-down "></i></h4><br>
-		                    </div>
-		                </div>
-		                <div class="accordion-content" data-tab-content>
-		                    <div class="grid-x">
-		                        <div class="medium-6 cell">
-		                            <h5 class="text-center run-2 uppercase s-bold">В ціну включено:</h5>
-		                            <ol>
-		                                <li class="run-1 include-list" ng-repeat="x in prog.include">{[{ x }]}</li>
-		                            </ol>
-		                        </div>
-		                        <div class="medium-6 cell">
-		                            <h5 class="text-center run-2 uppercase s-bold">Тренування:</h5>
-		                            <p class="big run-2">Аквапарк «ПЛЯЖ», <span class="s-bold">7:00</span>ранку або <span class="s-bold">8:00</span> ранку <br><span class="s-bold"> ПН | СР | ПТ</span> або <span class="s-bold">ВТ | ЧТ | СБ</span> на вибір</p><br>
-		                            <ul>
-		                                <li class="run-1 include-list" ng-repeat="x in prog.descr">{[{ x }]}</li>
-		                            </ul>
-		                        </div>
-		                    </div><br>
-		                    <div class="text-center">
-		                        <h4 class="run-2 s-bold">безкоштовне пробне тренування</h4>
-		                        <button class="button large white text-center uppercase s-bold run-bg">записатись</button>
-		                    </div>
-		                </div><br>
-		            </div>
-		        </div>
-		    </div><br><br>
+		   <br>
+		   <h1 class="text-center white uppercase">наші <span class="bold">програми</span></h1><br>
+		   <div class="grid-x  grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
+		       <div class="cell " ng-repeat="prog in programs.run" data-equalizer-watch>
+		           <div class="grid-x dark-024-bgrd" style="height: 100%">
+		               <div class="cell">
+		                   <br>
+		                   <h4 class="text-center white bold uppercase">{[{prog.name}]}</h4>
+		                   <img class="" src="assets/img/programs/{[{prog.ID}]}.png" alt="">
+		               </div>
+		               <div class="cell prog-features ">
+		                   <h6 class="text-center"><span class="s-bold uppercase">мета: </span>{[{prog.goal}]}</h6>
+		                   <div class=" text-center" style="padding: 0.8rem 0">початок: <span class=" s-bold"> {[{prog.start}]}</span> |
+		                       заплив: <span class=" s-bold"> {[{prog.final}]}</span>
+		                   </div>
+		                   <div class="grid-x align-bottom">
+		                       <div class="cell small-6 "><span class=" s-bold big">{[{prog.duration}]}</span>
+		                       </div>
+		                       <div class="cell small-6 text-right"><span class="s-bold bigger">{[{prog.price}]}</span> грн
+		                       </div>
+		                   </div>
+		               </div>
+		               <div class="cell align-self-bottom accordion" data-accordion data-allow-all-closed="true">
+		                   <div class="  accordion-item" data-accordion-item>
+		                       <a href="">
+		                           <p class="white text-center accordion-title" style="padding: 1.4rem; font-size: 1.4rem;">
+		                               детальніше <i class="fa fa-arrow-circle-down "></i>
+		                           </p>
+		                       </a>
+		                       <div class="accordion-content" style="position: relative; z-index: 100" data-tab-content>
+		                           <h5 class="text-center run-2 uppercase s-bold">В ціну включено:</h5>
+		                           <ol>
+		                               <li class="run-1 include-list" ng-repeat="x in prog.include">{[{ x }]}</li>
+		                           </ol><br>
+		                           <h5 class="text-center run-2 uppercase s-bold">Графік тренувань на вибір:</h5>
+		                           
+		                           <ul>
+		                               <li class="run-1 include-list" ng-repeat="x in prog.descr">{[{ x }]}</li>
+		                           </ul>
+		                           <br>
+		                           <div class="text-center">
+		                               <h4 class="run-2 s-bold">безкоштовне пробне тренування</h4>
+		                               <button class="button large white text-center uppercase s-bold run-bg">
+		                                   <a class="white" href="mailto:mykyta.ubyivovk@gmail.com" target="_blank">
+		                                       записатись
+		                                   </a>
+		                               </button>
+		                           </div>
+		                       </div>
+		                   </div>
+		               </div>
+		           </div>
+		       </div>
+		   </div>
+		   <br><br>   <br><br>
 		    <div class="section white-bg ">
 		        
 		        	<h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">партнери</span></h1>
@@ -151,27 +153,35 @@
 		        	</div><br><br>
 		    </div>
 		    <div class="grid-container">
-		    	<div id="feedback-4u">
-		    		<h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
-		    		<div class="grid-x  grid-padding-x small-up-1 large-up-2" data-equalizer data-equalize-on="large" data-equalize-by-row="true" >
-		    			<div class="cell" ng-repeat="quote in feedbacks">
-		    				<div class="card white-bg" data-equalizer-watch>
-		    					<div class="grid-x">
-		    						<div class="cell small-12 medium-shrink text-center">
-		    							<img src="assets/img/{[{quote.ID}]}.jpg">
-		    						</div>
-		    						<div class="cell small-12 medium-auto">
-		    							<div class="card-section ">
-		    								<h6 class="swim-1 bold uppercase">{[{quote.name}]} <br>
-		    								<span class="occupy swim-2">{[{quote.occupy}]}</span></h6>
-		    								<p>{[{quote.text}]}</p>
-		    							</div>
-		    						</div>
-		    					</div>
-		    				</div>
-		    			</div>
-		    		</div>
-		    	</div>
+		        <div id="feedback-4u">
+		            <h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
+		            <div class="grid-x  grid-padding-x small-up-1 large-up-2" data-equalizer data-equalize-on="large" data-equalize-by-row="true">
+		                <div class="cell" ng-repeat="quote in feedbacks">
+		                    <div class="card white-bg" data-equalizer-watch>
+		                        <div class="grid-x">
+		                            <div class="cell medium-shrink text-center">
+		                                <img src="assets/img/{[{quote.ID}]}.jpg">
+		                            </div>
+		                            <div class="cell medium-auto">
+		                                <div class="card-section ">
+		                                    <div class="grid-y" style="height: 86%; overflow: hidden;">
+		                                        <div class="cell">
+		                                            <h6 class="swim-1 bold uppercase">{[{quote.name}]} <br>
+		                                                <span class="occupy swim-2">{[{quote.occupy}]}</span></h6>
+		                                            <p>{[{quote.text}]}</p>
+		                                        </div>
+		                                    </div>
+		                                    <div class="cell  aling-self-bottom">
+		                                        <a href="">
+		                                            <div class="cell swim-1 s-bold">читати далі...</div>
+		                                        </a> </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
 		    </div><br><br>    <div class="white-bg slogan" style="margin-bottom: 0">
 		        <h2 class="text-center run-1 uppercase ">set your goal & <span class="run-2 bold">run</span> it</h2>
 		    </div>
