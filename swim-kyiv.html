@@ -29,8 +29,11 @@
 </head>
 
 <body>
-    <div id="preloader">
-        <div id="pre-logo"></div>
+    
+    <div id="preloader" class="swim-bg">
+        <div id="pre-logo">
+            <img src="assets/img/swim-4U_logo.svg" alt="">
+        </div>
     </div>
     <div ng-app="sport4U" ng-controller="sportCtrl">
         <div class="swim-ptrn fixed-bg"></div>
@@ -60,7 +63,7 @@
         	<br><h1 class="text-center white uppercase">наші <span class="bold ">переваги</span></h1><br>
         	<div class="grid-container">
         		<div class="grid-x  grid-padding-x small-up-1 medium-up-2 large-up-3" data-equalizer  data-equalize-on="medium">
-        			<div class="cell" ng-repeat="adv in advants">
+        			<div class="cell" ng-repeat="adv in swimAdvants">
         				<div class="card white-bg" data-equalizer-watch>
         					<div class="grid-x">
         						<div class="cell shrink adv-picto">

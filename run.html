@@ -29,8 +29,11 @@
 </head>
 
 <body>
-    <div id="preloader">
-        <div id="pre-logo"></div>
+    
+    <div id="preloader" class="run-bg">
+        <div id="pre-logo">
+            <img src="assets/img/run-4U_logo.svg" alt="">
+        </div>
     </div>
     <div ng-app="sport4U" ng-controller="sportCtrl">
         <div class="run-ptrn fixed-bg"></div>
@@ -50,7 +53,9 @@
                 <div class="sport-type-logo text-center">
                     <img src="assets/img/run-4U_logo.svg" alt="">
                 </div>
-                <img src="assets/img/run_hero_inner.png" alt="" class="sport-type-hero">
+                <div class="sport-type-hero">
+                    <img src="assets/img/run_hero_inner.png" alt="" class="">
+                </div>
             </div>
         </div>
         <div class="white-bg slogan">
@@ -59,7 +64,7 @@
         	<br><h1 class="text-center white uppercase">наші <span class="bold ">переваги</span></h1><br>
         	<div class="grid-container">
         		<div class="grid-x  grid-padding-x small-up-1 medium-up-2 large-up-3" data-equalizer  data-equalize-on="medium">
-        			<div class="cell" ng-repeat="adv in advants">
+        			<div class="cell" ng-repeat="adv in runAdvants">
         				<div class="card white-bg" data-equalizer-watch>
         					<div class="grid-x">
         						<div class="cell shrink adv-picto">
@@ -90,64 +95,61 @@
                 <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/run/08.jpg">
                 <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/run/09.jpg">
                 <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/run/10.jpg">
-                
             </div><br><br>
         </div>
-       <br>
-       <h1 class="text-center white uppercase">наші <span class="bold">програми</span></h1><br>
-       <div class="grid-x  grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
-           <div class="cell " ng-repeat="prog in programs.run" data-equalizer-watch>
-               <div class="grid-x dark-024-bgrd" style="height: 100%">
-                   <div class="cell">
-                       <br>
-                       <h4 class="text-center white bold uppercase">{[{prog.name}]}</h4>
-                       <img class="" src="assets/img/programs/{[{prog.ID}]}.png" alt="">
-                   </div>
-                   <div class="cell prog-features ">
-                       <h6 class="text-center"><span class="s-bold uppercase">мета: </span>{[{prog.goal}]}</h6>
-                       <div class=" text-center" style="padding: 0.8rem 0">початок: <span class=" s-bold"> {[{prog.start}]}</span> |
-                           заплив: <span class=" s-bold"> {[{prog.final}]}</span>
-                       </div>
-                       <div class="grid-x align-bottom">
-                           <div class="cell small-6 "><span class=" s-bold big">{[{prog.duration}]}</span>
-                           </div>
-                           <div class="cell small-6 text-right"><span class="s-bold bigger">{[{prog.price}]}</span> грн
-                           </div>
-                       </div>
-                   </div>
-                   <div class="cell align-self-bottom accordion" data-accordion data-allow-all-closed="true">
-                       <div class="  accordion-item" data-accordion-item>
-                           <a href="">
-                               <p class="white text-center accordion-title" style="padding: 1.4rem; font-size: 1.4rem;">
-                                   детальніше <i class="fa fa-arrow-circle-down "></i>
-                               </p>
-                           </a>
-                           <div class="accordion-content" style="position: relative; z-index: 100" data-tab-content>
-                               <h5 class="text-center run-2 uppercase s-bold">В ціну включено:</h5>
-                               <ol>
-                                   <li class="run-1 include-list" ng-repeat="x in prog.include">{[{ x }]}</li>
-                               </ol><br>
-                               <h5 class="text-center run-2 uppercase s-bold">Графік тренувань на вибір:</h5>
-                               
-                               <ul>
-                                   <li class="run-1 include-list" ng-repeat="x in prog.descr">{[{ x }]}</li>
-                               </ul>
-                               <br>
-                               <div class="text-center">
-                                   <h4 class="run-2 s-bold">безкоштовне пробне тренування</h4>
-                                   <button class="button large white text-center uppercase s-bold run-bg">
-                                       <a class="white" href="mailto:mykyta.ubyivovk@gmail.com" target="_blank">
-                                           записатись
-                                       </a>
-                                   </button>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <br><br>   <br><br>
+        <br>
+        <h1 class="text-center white uppercase">наші <span class="bold">програми</span></h1><br>
+        <div class="grid-x  grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
+            <div class="cell " ng-repeat="prog in programs.run" data-equalizer-watch>
+                <div class="grid-x dark-024-bgrd" style="height: 100%">
+                    <div class="cell">
+                        <br>
+                        <h4 class="text-center white bold uppercase">{[{prog.name}]}</h4>
+                        <img class="" src="assets/img/programs/{[{prog.ID}]}.png" alt="">
+                    </div>
+                    <div class="cell prog-features ">
+                        <h6 class="text-center">{[{prog.goal}]}</h6>
+                        <div class=" text-center" style="padding: 0.8rem 0">початок: <span class=" s-bold"> {[{prog.start}]}</span> |
+                            забіг: <span class=" s-bold"> {[{prog.final}]}</span>
+                        </div>
+                        <div class="grid-x align-bottom">
+                            <div class="cell small-6 "><span class=" s-bold big">{[{prog.duration}]}</span>
+                            </div>
+                            <div class="cell small-6 text-right"><span class="s-bold bigger">{[{prog.price}]}</span> грн
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell align-self-bottom accordion" data-accordion data-allow-all-closed="true">
+                        <div class="  accordion-item" data-accordion-item>
+                            <a href="">
+                                <p class="white text-center accordion-title" style="padding: 1.4rem; font-size: 1.4rem;">
+                                    детальніше <i class="fa fa-arrow-circle-down "></i>
+                                </p>
+                            </a>
+                            <div class="accordion-content" style="position: relative; z-index: 100" data-tab-content>
+                                <h5 class="text-center run-2 uppercase s-bold">В ціну включено:</h5>
+                                <ol>
+                                    <li class="run-1 include-list" ng-repeat="x in programs.include">{[{ x }]}</li>
+                                </ol><br>
+                                <h5 class="text-center run-2 uppercase s-bold">Графік тренувань на вибір:</h5>
+                                
+                                <ul>
+                                    <li class="run-1 include-list" ng-repeat="x in programs.descr">{[{ x }]}</li>
+                                </ul>
+                                <br>
+                                <div class="text-center">
+                                    <h4 class="run-2 s-bold">хочу на безкоштовне пробне тренування:</h4>
+                                   
+                                        <a class="button  large run-bg" href="mailto:mykyta.ubyivovk@gmail.com" style="margin-right: 0.8rem" target="_blank"> <i class="fa fa-paper-plane "></i></a>
+                                        <a class="button large run-bg" href="tel://+380636782132" target="_blank"><i class="fa fa-phone "></i> 063 678-21-32</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>    <br><br>
         <div class="section white-bg ">
             
             	<h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">партнери</span></h1>

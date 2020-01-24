@@ -13,21 +13,22 @@ app.config(function($interpolateProvider) {
 app.controller('sportCtrl', function($scope, $http) {
 
 
-    $http.get("assets/json/advant.json").then(function(response) {
-        $scope.advants = response.data;
+    $http.get("assets/json/advant-S.json").then(function(response) {
+        $scope.swimAdvants = response.data;
+
+    });
+    $http.get("assets/json/advant-R.json").then(function(response) {
+        $scope.runAdvants = response.data;
 
     });
 
-    $http.get("assets/json/gallery.json").then(function(response) {
-        $scope.gallery = response.data;
 
-    });
-    
+
     $http.get("assets/json/feedbacks.json").then(function(response) {
         $scope.feedbacks = response.data;
 
     });
-$http.get("assets/json/programs.json").then(function(response) {
+    $http.get("assets/json/programs.json").then(function(response) {
         $scope.programs = response.data;
 
     });
