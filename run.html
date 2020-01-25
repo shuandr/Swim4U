@@ -38,24 +38,26 @@
     <div ng-app="sport4U" ng-controller="sportCtrl">
         <div class="run-ptrn fixed-bg"></div>
         <div class="hero">
-            <div class="main-tel">
-            	<a class="white" href="tel://+380636782132"><i class="fa fa-phone-square fa-2x" style="transform: translateY(0.4rem); "></i>  063-678-21-32</a>
+            <div class="grid-x social-icons">
+                <div class="cell auto ">
+                    <a href="https://www.facebook.com/Run4Uclub" target="_blank">
+                        <i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com/run4uclub" target="_blank">
+                        <i class="fa fa-instagram fa-2x"></i></a>
+                   
+                </div>
+                <div class="cell shrink main-tel text-right">
+                    <a class="white" href="tel://+380636782132"><i class="fa fa-phone-square fa-2x" style="transform: translateY(0.4rem); "></i> 063-678-21-32</a>
+                </div>
             </div>
-            <div class="social-icons">
-            	<!-- <a href="https://www.facebook.com/Run4Uclub" target="_blank">
-            	<i class="fa fa-facebook-square fa-2x"></i></a> -->
-            	<a href="https://www.facebook.com/Run4Uclub" target="_blank">
-            	<i class="fa fa-facebook-square fa-2x"></i></a>
-            	<a href="https://www.instagram.com/run4uclub" target="_blank">
-            	<i class="fa fa-instagram fa-2x"></i></a>
-            	
-            </div>        <div class="sport-type">
-                <div class="sport-type-logo text-center">
-                    <img src="assets/img/run-4U_logo.svg" alt="">
+            <div class="grid-x ">
+                <div class="cell text-center ">
+                    <img class="logo main" src="assets/img/run-4U_logo.svg" alt="">
                 </div>
-                <div class="sport-type-hero">
-                    <img src="assets/img/run_hero_inner.png" alt="" class="">
-                </div>
+            </div>
+            <div class="hero-img">
+                <img src="assets/img/run_hero_s.png" alt="" class="hide-for-medium">
+                <img src="assets/img/run_hero.png" alt="" class="show-for-medium">
             </div>
         </div>
         <div class="white-bg slogan">
@@ -122,7 +124,7 @@
                     <div class="cell align-self-bottom accordion" data-accordion data-allow-all-closed="true">
                         <div class="  accordion-item" data-accordion-item>
                             <a href="">
-                                <p class="white text-center accordion-title" style="padding: 1.4rem; font-size: 1.4rem;">
+                                <p class="white text-center accordion-title">
                                     детальніше <i class="fa fa-arrow-circle-down "></i>
                                 </p>
                             </a>
@@ -198,44 +200,35 @@
         </div>
         <div class="swim-ptrn ">
             <div class="grid-container">
-                <div class="grid-x align-middle" style="height: 36vh">
+                <div class="grid-x align-middle" style="min-height: 36vh">
                     <div class="cell medium-8 ">
                         <a href="index.html">
                             <h1 class="text-center white bold uppercase">А ще ми плаваємо</h1>
                         </a>
                     </div>
-                    <div class="cell medium-4">
+                    <div class="cell medium-auto">
                         <a href="index.html">
                             <div class=" text-center">
-                                <img style="width: 240px; max-width: 64%" src="assets/img/swim-4U_logo.svg" alt="">
+                                <img class="logo"  src="assets/img/swim-4U_logo.svg" alt="">
                             </div>
                         </a>
                     </div>
                 </div>
-            </div>
+            </div><br>  
         </div>
         <footer class="dark-072-bgrd">
-        	<div class="grid-x  text-center">
-        		<div class="cell ">
-        			<div class="contacts">
-        				<div class="social-icons">
-        					
-        					<a class="swim-2"href="https://www.facebook.com/SwimForU" target="_blank">
-        					<i class="fa fa-facebook-square fa-2x"></i></a>
-        					<a class="sport-2"href="https://www.instagram.com/swim4u_" target="_blank">
-        					<i class="fa fa-instagram fa-2x"></i></a>
-        					<a class="white" href="tel://+380636782132"> 063-678-21-32</a> 
-        				</div>
-        			</div>
-        		</div>
-        		<div class="cell  ">
-        			
-        			
-        		</div>
-        		
-        	</div>
-        			<p class="text-center">© Всі права застережено. 2020</p><br>
-        	
+            <div class="grid-x  text-center">
+                <div class="cell ">
+                    <div class="social-icons">
+                        <a class="" href="https://www.facebook.com/SwimForU" target="_blank">
+                            <i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a class="" href="https://www.instagram.com/swim4u_" target="_blank">
+                            <i class="fa fa-instagram fa-2x"></i></a>
+                        <a class="white main-tel" href="tel://+380636782132"> 063-678-21-32</a>
+                    </div>
+                </div>
+            </div><br>
+            <p class="text-center">© Всі права застережено. 2020</p><br>
         </footer></div>
     <script src="assets/js/app.js"></script>
     <!-- <script src="assets/js_plugins/fullpage.min.js"></script> -->
