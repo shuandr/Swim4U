@@ -16,7 +16,24 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swim 4U | set your goal &amp; swim it</title>
-    <!-- <title>Swim4U | set your goal & swim it</title> -->
+    <meta name="description" content="Swim4U — це клуб, де ми навчимо тебе плавати. А, ти вже вмієш? Тоді їдемо перепливати Босфор. Повір, це можливо. Ми підготуємось до цієї пригоди разом!">
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '175145107145001');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=175145107145001&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
     <meta property="og:title" content="Swim 4U | set your goal &amp; swim it" />
     <meta property="og:description" content="Ми спортсмени-аматори, подорожуємо по світу, долаючи кілометри біжучи, пливучи та крутячи педалі. " />
     <meta property="og:image" content="https://shuandr.github.io/Swim4U/OG_img-swim.jpg">
@@ -224,12 +241,12 @@
                     <div class="cell medium-auto">
                         <a href="http://run4u.club/index.html">
                             <div class=" text-center">
-                                <img class="logo"  src="assets/img/run-4U_logo.svg" alt="">
+                                <img class="logo" src="assets/img/run-4U_logo.svg" alt="">
                             </div>
                         </a>
                     </div>
                 </div>
-            </div><br>	
+            </div><br>
         </div>
         <footer class="dark-072-bgrd">
             <div class="grid-x  text-center">
@@ -245,31 +262,27 @@
             </div><br>
             <p class="text-center">© Всі права застережено. 2020</p><br>
         </footer></div>
-    
+    <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
     window.fbAsyncInit = function() {
-    FB.init({
-    xfbml : true,
-    version : 'v6.0'
-    });
+        FB.init({
+            xfbml: true,
+            version: 'v6.0'
+        });
     };
     
     (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-    attribution=install_email
-    page_id="740332622818164"
-      theme_color="#20cef5"
-    logged_in_greeting="Привіт! Скоріш за все ми зараз тренуємося, але як тільки дістанемося до комп'ютера - одразу вам відповімо)"
-    logged_out_greeting="Привіт! Скоріш за все ми зараз тренуємося, але як тільки дістанемося до комп'ютера - одразу вам відповімо)">
+    <div class="fb-customerchat" attribution=setup_tool page_id="740332622818164" theme_color="#0084ff" logged_in_greeting="Привіт! Радо відповімо на Ваші запитання)" logged_out_greeting="Привіт! Радо відповімо на Ваші запитання)">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
