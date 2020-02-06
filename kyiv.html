@@ -120,7 +120,7 @@
                             заплив: <span class=" s-bold"> {[{prog.final}]}</span>
                         </div>
                         <div class="grid-x align-bottom">
-                            <div class="cell small-6 "><span class=" s-bold big">{[{prog.duration}]}</span>
+                            <div class="cell small-6 "><span class=" s-bold big">  {[{prog.duration}]}</span>
                             </div>
                             <div class="cell small-6 text-right"><span class="s-bold bigger">{[{prog.price}]}</span> грн
                             </div>
@@ -155,7 +155,8 @@
                     </div>
                 </div>
             </div>
-        </div>    <div class="grid-x align-middle">
+        </div>
+        <div class="grid-x align-middle">
             <div class="cell medium-7 large-9">
                 <h1 class="text-center white uppercase">Подарункові <span class="bold">сертифікати <br>від 1000</span> <small class="white">грн</small></h1>
             </div>
@@ -177,6 +178,7 @@
             		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/07.svg">
             		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/08.svg">
             		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/09.svg">
+            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/10.png">
             	</div><br><br>
         </div>
         <div class="grid-container">
@@ -223,6 +225,31 @@
             </div><br>
             <p class="text-center">© Всі права застережено. 2020</p><br>
         </footer></div>
+    
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+    FB.init({
+    xfbml : true,
+    version : 'v6.0'
+    });
+    };
+    
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+    attribution=install_email
+    page_id="102115014606778"
+    logged_in_greeting="Привіт!) Що Вас цікавить? Пишіть, радо відповімо!"
+    logged_out_greeting="Привіт!) Що Вас цікавить? Пишіть, радо відповімо!">
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
     <script src="assets/js_plugins/myAngularSK.js"></script>
