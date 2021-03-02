@@ -5,7 +5,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82329311-4"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -18,8 +18,8 @@
     <title>Swim 4U Київ | set your goal &amp; swim it</title>
     <meta name="description" content="Swim4U — це клуб, де ми навчимо тебе плавати. А, ти вже вмієш? Тоді їдемо перепливати Босфор. Повір, це можливо. Ми підготуємось до цієї пригоди разом!">
     <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
+    <script>
+        !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
   if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -30,193 +30,151 @@
   fbq('init', '175145107145001');
   fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=175145107145001&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=175145107145001&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
     <meta property="og:image" content="https://swim4u.club/OG_img-swim.jpg">
     <meta property="og:url" content="https://swim4u.club/kyiv.html" />
     <meta property="og:title" content="Swim 4U Київ | set your goal &amp; swim it" />
     <meta property="og:description" content="Ми спортсмени-аматори, подорожуємо по світу, долаючи кілометри біжучи, пливучи та крутячи педалі. " />
     <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
-    
-    <div id="preloader" class="swim-bg">
-        <div id="pre-logo">
-            <img src="assets/img/swim-4U_logo.svg" alt="">
-        </div>
-    </div>
     <div ng-app="sport4U" ng-controller="sportCtrl">
+        <div id="preloader" class="swim-ptrn">
+            <div id="pre-logo">
+                <img src="assets/img/swim-4U_logo.svg" alt="">
+            </div>
+        </div>
         <div class="swim-ptrn fixed-bg"></div>
         <div class="hero">
             <div class="grid-x social-icons">
-                <div class="cell small-5 medium-auto ">
-                    <a href="https://www.facebook.com/SwimForUKyiv" target="_blank">
+                <div class="cell small-7 medium-shrink ">
+                    <a href="https://www.facebook.com/{[{data.fb}]}" target="_blank">
                         <i class="fa fa-facebook-square fa-2x"></i></a>
-                    <a href="https://www.instagram.com/swim4u_" target="_blank">
+                    <a href="https://www.instagram.com/{[{data.insta}]}" target="_blank">
                         <i class="fa fa-instagram fa-2x"></i></a>
-                    <a href="index.html" class=" button small white-bg swim-1 s-bold" style="margin: 0.6rem 0 0.4rem">Swim4U Львів</a>
+                    <a class="white" href="tel://{[{data.tel}]}">
+                        <i class="fa fa-phone-square fa-2x"></i> 
+                        <span class="hide-for-small-only"> {[{data.telView}]}</span> </a>
                 </div>
-                <div class="cell small-7 medium-shrink main-tel text-right">
-                    <a class="white" href="tel://+380636710994"><i class="fa fa-phone-square fa-2x" style="transform: translateY(0.4rem); "></i> 063-671-09-94</a>
+                <div class="cell small-5 medium-auto text-right">
+                    <a href="{[{data.otherCityHref}]}" class=" button small white-bg swim-1 s-bold">{[{data.otherCityBtn}]}</a>
                 </div>
             </div>
             <div class="grid-x ">
-                <div class="cell text-center ">
+                <div class="cell text-center " style="margin-top: 0.6rem;">
+                    <h2 class="text-center white uppercase">{[{data.city}]}</h2>
                     <img class="logo main" src="assets/img/swim-4U_logo.svg" alt="">
                 </div>
             </div>
             <div class="hero-img">
-                <img src="assets/img/swim_hero_s.png" alt="" class="hide-for-medium">
-                <img src="assets/img/swim_hero.png" alt="" class="show-for-medium">
+                <img src="assets/img/swim_hero_s.webp" alt="" class="hide-for-medium">
+                <img src="assets/img/swim_hero.webp" alt="" class="show-for-medium">
             </div>
         </div>
         <div class="white-bg slogan">
-            <h2 class="text-center swim-1 uppercase ">set your goal & <span class="swim-2 bold">swim</span> it</h2>
-        </div>
-        	<br><h1 class="text-center white uppercase">наші <span class="bold ">переваги</span></h1><br>
-        	<div class="grid-container">
-        		<div class="grid-x  grid-padding-x small-up-1 medium-up-2 large-up-3" data-equalizer  data-equalize-on="medium">
-        			<div class="cell" ng-repeat="adv in data.advants">
-        				<div class="card white-bg" data-equalizer-watch>
-        					<div class="grid-x">
-        						<div class="cell shrink adv-picto">
-        							<img src="assets/img/{[{adv.ID}]}.svg">
-        						</div>
-        						<div class="cell auto">
-        							<div class="card-section">
-        								<h4 class="text-center swim-1 bold uppercase">{[{adv.title}]}</h4>
-        								<p>{[{adv.body}]}</p>
-        							</div>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div><br><br>
-        <br><br>
+            <h3 class="text-center swim-1 uppercase ">set your goal & <span class="swim-2 bold">swim</span> it</h3>
+        </div>    <br><br><br>
+        <br><br><br>
+        <br><br><br>
         <div class="section white-bg">
-            <h1 class="text-center swim-1 uppercase">we are <span class="bold swim-2">in action</span></h1><br><br>
-            <div id="owl-carousel-swim" class="owl-carousel owl-theme gallery">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/01.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/02.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/03.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/04.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/05.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/06.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/07.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/08.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/09.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/10.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/11.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/12.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/13.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/14.jpg">
-                <img class="owl-lazy" style="width: auto; " src="assets/img/gallery/swim/15.jpg">
-            </div><br><br>
+            <h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">програми</span></h1><br>
+            <div class="grid-container">
+                <div class="grid-x  grid-padding-x">
+                    <div class="cell large-6 text-center">
+                        <p class="swim-1 s-bold big">{[{data.progIntro.intro}]}</p>
+                        <table class="big swim-1 prog-tbl">
+                            <tr>
+                                <td ng-repeat="prog in data.progIntro.prices">{[{prog.dur}]}<br>
+                                <span class="bold swim-2 bigger">{[{prog.prc}]}</span> грн<br>
+                                <span class="bold swim-1 ">{[{prog.prc1}]} </span>
+                                    <span class="sml-txt swim-1 ">грн/тренування</span></td>
+                            </tr>
+                        </table>
+                        <h5 class=" swim-2 uppercase s-bold">розклад тренувань:</h5>
+                        <p class=" swim-1">
+                            {[{data.trainPlace}]},
+                            <br><span class="s-bold">{[{data.trainDays1}]}</span> о <span class="s-bold">{[{data.trainTime}]}</span><br>
+                            або <span class="s-bold">{[{data.trainDays2}]}</span> о <span class="s-bold">{[{data.trainTime2}]}</span></p>
+                        <br>
+                    </div>
+                    <div class="cell large-6">
+                        <h5 class="text-center swim-2 uppercase s-bold">В ціну включено:</h5>
+                        <ol>
+                            <li class="swim-1 include-list" ng-repeat="x in data.progIntro.list">{[{ x }]}</li>
+                        </ol><br>
+                        <p class="swim-1 s-bold">{[{data.progIntro.descr}]}</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h5 class="swim-2 s-bold">хочу на безкоштовне пробне тренування:</h5>
+                    <a class="button  large " href="mailto:{[{data.mail}]}" style="margin-right: 0.8rem" target="_blank"> <i class="fa fa-envelope "></i></a>
+                    <a class="button large " href="tel://{[{data.tel}]}" target="_blank"><i class="fa fa-phone "></i> {[{data.telView}]}</a>
+                </div>
+            </div>
         </div>
-        <br>
-        <h1 class="text-center white uppercase">наші <span class="bold">програми</span></h1><br>
         <div class="grid-x  grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3 xlarge-up-4" data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
             <div class="cell " ng-repeat="prog in data.programs" data-equalizer-watch>
                 <div class="grid-x dark-024-bgrd" style="height: 100%">
                     <div class="cell">
                         <br>
                         <h4 class="text-center white bold uppercase">{[{prog.name}]}</h4>
-                        <img style="min-width: 100%;" src="assets/img/programs/{[{prog.ID}]}.png" loading="lazy" alt="">
+                        <img src="assets/img/programs/{[{prog.ID}]}.webp">
                     </div>
                     <div class="cell prog-features ">
-                        <h6 class="text-center uppercase">дистанція: <span class="s-bold ">{[{prog.distance}]}</span></h6>
-                        <div class=" text-center" style="padding: 0.8rem 0">початок: <span class=" s-bold"> {[{prog.start}]}</span> |
-                            заплив: <span class=" s-bold"> {[{prog.final}]}</span>
-                        </div>
-                        <div class="grid-x align-bottom">
-                            <div class="cell small-6 "><span class=" s-bold big">  {[{prog.duration}]}</span>
+                        <p class="text-center">дистанція: <span class="s-bold ">{[{prog.distance}]}</span></p><br>
+                        <div class="grid-x align-bottom text-center">
+                            <div class="cell small-6">рекомендована тривалість:<br><span class=" s-bold big">{[{prog.duration}]}</span>
                             </div>
-                            <div class="cell small-6 text-right"><span class="s-bold bigger">{[{prog.price}]}</span> грн
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell align-self-bottom accordion" data-accordion data-allow-all-closed="true">
-                        <div class="  accordion-item" style="position: relative;" data-accordion-item>
-                            <a href="">
-                                <p class="white text-center accordion-title">
-                                    детальніше <i class="fa fa-arrow-circle-down "></i>
-                                </p>
-                            </a>
-                            <div class="accordion-content white-bg" style="position: absolute; z-index: 100" data-tab-content>
-                                <h5 class="text-center swim-2 uppercase s-bold">В ціну включено:</h5>
-                                <ol>
-                                    <li class="swim-1 include-list" ng-repeat="x in prog.include">{[{ x }]}</li>
-                                </ol><br>
-                                <h6 class="text-center swim-2 uppercase s-bold">Тренування:</h6>
-                                <p class="swim-2">{[{data.trainPlace}]},
-                                    <span class="s-bold">{[{data.trainDays}]} — {[{data.trainTime}]} </span> або
-                                    <br>{[{data.trainPlace2}]},
-                                    <span class="s-bold">{[{data.trainDays}]} — {[{data.trainTime2}]} </span>
-                                    </p>
-                                <br>
-                                <div class="text-center">
-                                    <h5 class="swim-2 s-bold">хочу на безкоштовне пробне тренування:</h5>
-                                    <a class="button  large " href="mailto:{[{data.mail}]}" style="margin-right: 0.8rem" target="_blank"> <i class="fa fa-envelope "></i></a>
-                                    <a class="button large " href="tel://{[{data.tel}]}" target="_blank"><i class="fa fa-phone "></i> {[{data.telView}]}</a>
-                                </div>
+                            <div class="cell small-6">
+                                заплив:<br><span class=" s-bold"> {[{prog.final}]}</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-x align-middle">
+        </div>    <div class="grid-x align-middle">
             <div class="cell medium-7 large-9">
                 <h1 class="text-center white uppercase">Подарункові <span class="bold">сертифікати <br>від 1000</span> <small class="white">грн</small></h1>
             </div>
             <div class="cell medium-5 large-3">
-                <img style="" src="assets/img/cert_S.png" alt="">
+                <img style="" src="assets/img/cert_S.webp" alt="">
             </div>
-        </div> <br><br>
-        <div class="section white-bg ">
-            
-            	<h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">партнери</span></h1>
-            	<div id="partners" class="owl-carousel owl-theme gallery-logos">
-            		
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/02.svg">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/01.svg">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/03.svg">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/04.svg">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/05.svg">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/06.png">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/07.svg">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/08.svg">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/09.svg">
-            		<img class="owl-lazy" style="width: auto;" src="assets/img/partners/10.png">
-            	</div><br><br>
-        </div>
-        <div class="grid-container">
-            <div id="feedback-4u">
-                <h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
-                <!-- <div class="grid-x  grid-padding-x small-up-1 large-up-2" data-equalizer data-equalize-on="large" data-equalize-by-row="true"> -->
-                <div class="grid-x  grid-padding-x small-up-1 large-up-2">
-                    <div class="cell" ng-repeat="quote in data.feedbacks">
-                        <!-- <div class="card white-bg" data-equalizer-watch> -->
-                        <div class="card white-bg">
-                            <div class="grid-x">
-                                <div class="cell medium-shrink text-center">
-                                    <img src="assets/img/{[{quote.ID}]}.jpg">
-                                </div>
-                                <div class="cell medium-auto">
-                                    <div class="card-section ">
-                                        <div class="read-more" style="overflow: hidden;">
-                                        <h6 class="swim-1 bold uppercase">{[{quote.name}]} <br>
+        </div> <br><br>    <div class="section white-bg">
+            <h1 class="text-center swim-1 uppercase">we are <span class="bold swim-2">in action</span></h1><br>
+            <div class="gallery">
+                <slick ng-if="dataLoaded" settings="mainSlickConfig">
+                    <img class="align-self-middle" ng-repeat="slide in data.gallery" src="assets/img/gallery/swim/{[{slide}]}" alt=" ">
+                </slick>
+            </div><br><br>
+        </div>    <div id="feedback-4u" class="section">
+            <h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
+            <div class="grid-x  grid-padding-x small-up-1  large-up-2 xlarge-up-3">
+                <div class="cell" ng-repeat="quote in data.feedbacks">
+                    <div class="card white-bg">
+                        <div class="grid-x">
+                            <div class="cell medium-shrink text-center">
+                                <img src="assets/img/{[{quote.ID}]}.webp">
+                            </div>
+                            <div class="cell medium-auto">
+                                <div class="card-section ">
+                                    <div class="read-more" style="overflow: hidden;">
+                                        <h6 class="swim-1 s-bold">{[{quote.name}]} <br>
                                             <span class="occupy swim-2">{[{quote.occupy}]}</span></h6>
-                                            <p>{[{quote.text}]}</p>
-                                        </div>
+                                        <p class="pre">{[{quote.text}]}</p>
                                     </div>
                                 </div>
                             </div>
@@ -224,56 +182,58 @@
                     </div>
                 </div>
             </div>
-        </div>
-        </div><br><br>    <div class="white-bg slogan" style="margin-bottom: 0">
-            <h2 class="text-center swim-1 uppercase ">set your goal & <span class="swim-2 bold">swim</span> it</h2>
-        </div>
-        <footer class="dark-072-bgrd">
+        </div><br>    <div class="section white-bg ">
+            <h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">партнери</span></h1>
+            <div id="partners" class=" gallery-logos">
+                <slick ng-if="dataLoaded" settings="mainSlickConfig">
+                    <img ng-repeat="logo in data.partners" src="assets/img/partners//{[{logo}]}" alt="">
+                </slick>
+            </div>
+        </div>    <footer class="dark-072-bgrd">
             <div class="grid-x  text-center">
                 <div class="cell ">
                     <div class="social-icons">
-                        <a class="" href="https://www.facebook.com/SwimForUKyiv" target="_blank">
+                        <a class="" href="https://www.facebook.com/{[{data.fb}]}" target="_blank">
                             <i class="fa fa-facebook-square fa-2x"></i></a>
-                        <a class="" href="https://www.instagram.com/swim4u_" target="_blank">
+                        <a class="" href="https://www.instagram.com/{[{data.insta}]}" target="_blank">
                             <i class="fa fa-instagram fa-2x"></i></a>
-                        <a class="white main-tel" href="tel://+380636710994"> 063-671-09-94</a>
+                        <a class="white main-tel" href="tel://{[{data.tel}]}"><i class="fa fa-phone-square fa-2x"></i> {[{data.telView}]}</a>
                     </div>
                 </div>
             </div><br>
-            <p class="text-center">© Всі права застережено. 2020</p><br>
+            <p class="text-center">© Всі права застережено. 2021</p><br>
         </footer></div>
-    
     <div id="fb-root"></div>
     <script>
     window.fbAsyncInit = function() {
-    FB.init({
-    xfbml : true,
-    version : 'v6.0'
-    });
+        FB.init({
+            xfbml: true,
+            version: 'v6.0'
+        });
     };
     
     (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-    attribution=install_email
-    page_id="102115014606778"
-    logged_in_greeting="Привіт!) Що Вас цікавить? Пишіть, радо відповімо!"
-    logged_out_greeting="Привіт!) Що Вас цікавить? Пишіть, радо відповімо!">
+    <div class="fb-customerchat" attribution=install_email page_id="102115014606778" logged_in_greeting="Привіт!) Що Вас цікавить? Пишіть, радо відповімо!" logged_out_greeting="Привіт!) Що Вас цікавить? Пишіть, радо відповімо!">
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular-route.js"></script>
+    <script src="assets/js_plugins/angular-locale_uk-ua.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
     <script src="assets/js_plugins/myAngularSK.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
-    <script src="assets/js_plugins/owl.carousel.min.js"></script>
-    <script src="assets/js_plugins/readmore.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js_plugins/angular-slick.js"></script>
+    <!-- <script src="assets/js_plugins/readmore.min.js"></script> -->
 </body>
 
 </html>
