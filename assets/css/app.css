@@ -7456,6 +7456,7 @@ h1 {
 }
 
 .gallery img {
+	height: auto;
     max-height: 64vh;
     width: auto;
     margin: .5rem
