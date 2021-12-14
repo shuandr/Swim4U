@@ -66,7 +66,7 @@
                     <a href="https://www.instagram.com/{[{data.insta}]}" target="_blank">
                         <i class="fa fa-instagram fa-2x"></i></a>
                     <a class="white" href="tel://{[{data.tel}]}">
-                        <i class="fa fa-phone-square fa-2x"></i> 
+                        <i class="fa fa-phone-square fa-2x"></i>
                         <span class="hide-for-small-only"> {[{data.telView}]}</span> </a>
                 </div>
                 <div class="cell small-5 medium-auto text-right">
@@ -86,7 +86,8 @@
         </div>
         <div class="white-bg slogan">
             <h3 class="text-center swim-1 uppercase ">set your goal & <span class="swim-2 bold">swim</span> it</h3>
-        </div>    <div class="section">
+        </div>
+        <div class="section">
             <h1 class="text-center white uppercase">наші <span class="bold ">тренери</span></h1>
             <div class="grid-container trainers">
                 <div class=" grid-x  grid-padding-x small-up-1 medium-up-2">
@@ -97,7 +98,8 @@
                     </div>
                 </div>
             </div>
-        </div>    <div class="section white-bg">
+        </div>
+        <div class="section white-bg">
             <h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">програми</span></h1><br>
             <div class="grid-container">
                 <div class="grid-x  grid-padding-x">
@@ -106,8 +108,8 @@
                         <table class="big swim-1 prog-tbl">
                             <tr>
                                 <td ng-repeat="prog in data.progIntro.prices">{[{prog.dur}]}<br>
-                                <span class="bold swim-2 bigger">{[{prog.prc}]}</span> грн<br>
-                                <span class="bold swim-1 ">{[{prog.prc1}]} </span>
+                                    <span class="bold swim-2 bigger">{[{prog.prc}]}</span> грн<br>
+                                    <span class="bold swim-1 ">{[{prog.prc1}]} </span>
                                     <span class="sml-txt swim-1 ">грн/тренування</span></td>
                             </tr>
                         </table>
@@ -115,7 +117,9 @@
                         <p class=" swim-1">
                             {[{data.trainPlace}]},
                             <br><span class="s-bold">{[{data.trainDays1}]}</span> о <span class="s-bold">{[{data.trainTime}]}</span><br>
-                            або <span class="s-bold">{[{data.trainDays2}]}</span> о <span class="s-bold">{[{data.trainTime2}]}</span></p>
+                            або <span class="s-bold">{[{data.trainDays2}]}</span> о <span class="s-bold">{[{data.trainTime2}]}</span><br>
+                            або <span class="s-bold">{[{data.trainDays3}]}</span> та <span class="s-bold"> {[{data.trainTime3}]}</span>
+                        </p>
                         <br>
                     </div>
                     <div class="cell large-6">
@@ -154,21 +158,24 @@
                     </div>
                 </div>
             </div>
-        </div>    <div class="grid-x align-middle">
+        </div>
+        <div class="grid-x align-middle">
             <div class="cell medium-7 large-9">
                 <h1 class="text-center white uppercase">Подарункові <span class="bold">сертифікати <br>від 1000</span> <small class="white">грн</small></h1>
             </div>
             <div class="cell medium-5 large-3">
                 <img style="" src="assets/img/cert_S.webp" alt="">
             </div>
-        </div> <br><br>    <div class="section white-bg">
+        </div> <br><br>
+        <div class="section white-bg">
             <h1 class="text-center swim-1 uppercase">we are <span class="bold swim-2">in action</span></h1><br>
             <div class="gallery">
                 <slick ng-if="dataLoaded" settings="mainSlickConfig">
                     <img class="align-self-middle" ng-repeat="slide in data.gallery" src="assets/img/gallery/swim/{[{slide}]}" alt=" ">
                 </slick>
             </div><br><br>
-        </div>    <div id="feedback-4u" class="section">
+        </div>
+        <div id="feedback-4u" class="section">
             <h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
             <div class="grid-x  grid-padding-x small-up-1  large-up-2 xlarge-up-3">
                 <div class="cell" ng-repeat="quote in data.feedbacks">
@@ -190,14 +197,16 @@
                     </div>
                 </div>
             </div>
-        </div><br>    <div class="section white-bg ">
+        </div><br>
+        <div class="section white-bg ">
             <h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">партнери</span></h1>
             <div id="partners" class=" gallery-logos">
                 <slick ng-if="dataLoaded" settings="mainSlickConfig">
                     <img ng-repeat="logo in data.partners" src="assets/img/partners//{[{logo}]}" alt="">
                 </slick>
             </div>
-        </div>    <div class="run-ptrn ">
+        </div>
+        <div class="run-ptrn ">
             <div class="grid-container">
                 <div class="grid-x align-middle" style="min-height: 36vh">
                     <div class="cell medium-8 ">
@@ -228,7 +237,8 @@
                 </div>
             </div><br>
             <p class="text-center">© Всі права застережено. 2021</p><br>
-        </footer></div>
+        </footer>
+    </div>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
@@ -238,7 +248,7 @@
             version: 'v6.0'
         });
     };
-    
+
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
