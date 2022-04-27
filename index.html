@@ -66,10 +66,10 @@
                     <a href="https://www.instagram.com/{[{data.insta}]}" target="_blank">
                         <i class="fa fa-instagram fa-2x"></i></a>
                     <a class="white" href="tel://{[{data.tel}]}">
-                        <i class="fa fa-phone-square fa-2x"></i>
+                        <i class="fa fa-phone-square fa-2x"></i> 
                         <span class="hide-for-small-only"> {[{data.telView}]}</span> </a>
                 </div>
-                
+               
             </div>
             <div class="grid-x ">
                 <div class="cell text-center " style="margin-top: 0.6rem;">
@@ -83,8 +83,7 @@
         </div>
         <div class="white-bg slogan">
             <h3 class="text-center swim-1 uppercase ">set your goal & <span class="swim-2 bold">swim</span> it</h3>
-        </div>
-        <div class="section">
+        </div>    <div class="section">
             <h1 class="text-center white uppercase">наші <span class="bold ">тренери</span></h1>
             <div class="grid-container trainers">
                 <div class=" grid-x  grid-padding-x small-up-1 medium-up-2 large-up-3">
@@ -95,8 +94,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section white-bg">
+        </div>    <div class="section white-bg">
             <h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">програми</span></h1><br>
             <div class="grid-container">
                 <div class="grid-x  grid-padding-x">
@@ -115,12 +113,12 @@
                                 </div>
                             </div>
                         </div><br>
+                       
                         <h5 class=" swim-2 uppercase s-bold">розклад тренувань:</h5>
                         <p class=" swim-1">
                             {[{data.trainPlace}]},
                             <br><span class="s-bold">{[{data.trainDays1}]}</span> о <span class="s-bold">{[{data.trainTime}]}</span><br>
                             або <span class="s-bold">{[{data.trainDays2}]}</span> о <span class="s-bold">{[{data.trainTime2}]}</span><br>
-                            або <span class="s-bold">{[{data.trainDays3}]}</span> та <span class="s-bold"> {[{data.trainTime3}]}</span>
                         </p>
                         <br>
                     </div>
@@ -160,26 +158,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-x align-middle">
+        </div>    <div class="grid-x align-middle">
             <div class="cell medium-7 large-9">
                 <h1 class="text-center white uppercase">Подарункові <span class="bold">сертифікати <br>від 1000</span> <small class="white">грн</small></h1>
                 <p class="text-center white">*мінімальна вартість програми — 13 000 грн</p>
-
             </div>
             <div class="cell medium-5 large-3">
                 <img style="" src="assets/img/cert_S.webp" alt="">
             </div>
-        </div> <br><br>
-        <div class="section white-bg">
+        </div> <br><br>    <div class="section white-bg">
             <h1 class="text-center swim-1 uppercase">we are <span class="bold swim-2">in action</span></h1><br>
             <div class="gallery">
                 <slick ng-if="dataLoaded" settings="mainSlickConfig">
                     <img class="align-self-middle" ng-repeat="slide in data.gallery" src="assets/img/gallery/swim/{[{slide}]}" alt=" ">
                 </slick>
             </div><br><br>
-        </div>
-        <div id="feedback-4u" class="section">
+        </div>    <div id="feedback-4u" class="section">
             <h1 class="text-center white uppercase">відгуки <span class="bold">учасників</span></h1><br>
             <div class="grid-x  grid-padding-x small-up-1  large-up-2 xlarge-up-3">
                 <div class="cell" ng-repeat="quote in data.feedbacks">
@@ -201,16 +195,14 @@
                     </div>
                 </div>
             </div>
-        </div><br>
-        <div class="section white-bg ">
+        </div><br>    <div class="section white-bg ">
             <h1 class="text-center swim-1 uppercase">наші <span class="bold swim-2">партнери</span></h1>
             <div id="partners" class=" gallery-logos">
                 <slick ng-if="dataLoaded" settings="mainSlickConfig">
                     <img ng-repeat="logo in data.partners" src="assets/img/partners//{[{logo}]}" alt="">
                 </slick>
             </div>
-        </div>
-        <div class="run-ptrn ">
+        </div>    <div class="run-ptrn ">
             <div class="grid-container">
                 <div class="grid-x align-middle" style="min-height: 36vh">
                     <div class="cell medium-8 ">
@@ -241,8 +233,7 @@
                 </div>
             </div><br>
             <p class="text-center">© Всі права застережено. 2021</p><br>
-        </footer>
-    </div>
+        </footer></div>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
@@ -252,7 +243,7 @@
             version: 'v6.0'
         });
     };
-
+    
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;

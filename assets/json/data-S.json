@@ -13,7 +13,6 @@
     "trainTime3": "СБ о 7:00 | 8:00 | 9:00",
     "trainDays1": "ПН | СР | ПТ",
     "trainDays2": "ВТ | ЧТ | СБ",
-    "trainDays3": "ВТ | ЧТ о 19:45",
     "trainers": [
         {
             "img": "kopetchak.webp",
